@@ -24,5 +24,7 @@ public class MyMain {
         bst.Insert(25);
         bst.preOrder();
         bst.postOrder();
+        //the output prooves that Root element is placed at opposite end, i.e. in pre order root is the first element where as in post order root is the last element.
+        //They have common mid point, i.e. both the traversal will give same element at the mid position for odd number of nodes.
     }
 }

@@ -3,6 +3,7 @@ package problem2.main;
 public class MyBST {
     public Node root = null;
     public void preOrder() {
+        System.out.print("preOrder sequence:");
         Node temp = root;
         pretrav(temp);
         System.out.println();
@@ -12,10 +13,11 @@ public class MyBST {
             return;
         }
         System.out.print(node.getData()+"  ");
-        pretrav(node.getLeft());
         pretrav(node.getRight());
+        pretrav(node.getLeft());
     }
     public void postOrder() {
+        System.out.print("postOrder sequence:");
         Node tem = root;
         posttrav(tem);
         System.out.println();
